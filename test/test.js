@@ -19,3 +19,5 @@ function compare (t, name) {
     .process(html)
     .then((res) => t.truthy(res.html === expected))
 }
+
+// vim: shiftwidth=2

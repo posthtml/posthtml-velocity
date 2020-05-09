@@ -1,16 +1,14 @@
 {
-  "name": "posthtml-plugin",
-  "description": "PostHTML plugin description",
+  "name": "posthtml-velocity",
+  "description": "PostHTML Velocity",
   "version": "1.0.0",
-  "author": "PostHTML",
+  "author": "Ivan Voischev <voischev.ivan@ya.ru>",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/posthtml/posthtml-plugin-boilerplate/issues",
-  "dependencies": {
-    "posthtml": "^0.11.4"
-  },
+  "bugs": "https://github.com/posthtml/posthtml-velocity/issues",
   "devDependencies": {
+    "posthtml": "^0.13.0",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-angular": "^8.0.0",
     "ava": "^2.1.0",
@@ -24,15 +22,16 @@
   "engines": {
     "node": ">=8"
   },
-  "homepage": "https://github.com/posthtml/posthtml-plugin-boilerplate",
+  "homepage": "https://github.com/posthtml/posthtml-velocity",
   "keywords": [
     "html",
     "posthtml",
-    "posthtml-plugin"
+    "posthtml-plugin",
+    "velocity"
   ],
   "license": "MIT",
-  "main": "lib",
-  "repository": "posthtml/posthtml-plugin-boilerplate",
+  "main": "src",
+  "repository": "posthtml/posthtml-velocity",
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md",
     "lint": "standard | snazzy",
