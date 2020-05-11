@@ -7,8 +7,8 @@ const path = require('path')
 const posthtml = require('posthtml')
 const fixtures = path.join(__dirname, 'fixtures')
 
-test('basic', (t) => {
-  return compare(t, 'basic')
+test('preload', (t) => {
+  return compare(t, 'preload')
 })
 
 function compare (t, name) {
@@ -17,7 +17,9 @@ function compare (t, name) {
 
   return posthtml([plugin()])
     .process(html)
-    .then((res) => t.truthy(res.html === expected))
+    .then((res) => {
+      return t.truthy(res.html === expected)
+    })
 }
 
 // vim: shiftwidth=2
